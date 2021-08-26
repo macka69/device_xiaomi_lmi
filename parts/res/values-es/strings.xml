@@ -37,4 +37,10 @@
     <string name="stop_operate_camera_frequently">Estás abriendo la cámara con demasiada frecuencia</string>
     <string name="takeback_camera_front_failed">No se pudo cerrar la cámara. Vuelve a intentarlo</string>
     <string name="popup_camera_front_failed">No se pudo abrir la cámara. Vuelve a intentarlo</string>
+    
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Limpiar altavoz</string>
+    <string name="clear_speaker_summary">Reproducir un sonido durante 30 segundos para limpiar el altavoz</string>
+    <string name="clear_speaker_description">Haz esto 1 o 2 veces si el altavoz está un poco obstruido, sube el volumen al máximo.\n\nSi el altavoz está muy sucio, haz esto de 2 a 5 veces mientras sacudes el dispositivo con el altavoz apuntando hacia abajo.\n\nAsegúrate de desconectar los auriculares</string>
+
 </resources>
