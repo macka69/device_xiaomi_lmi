@@ -17,7 +17,7 @@ static const variant_info_t lmi_info = {
     .device = "lmi",
     .marketname = "",
     .model = "POCO F2 Pro",
-    .build_fingerprint = "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys",
+    .build_fingerprint = "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys",
 
     .nfc = true,
 };
@@ -30,7 +30,7 @@ static const variant_info_t lmipro_info = {
     .device = "lmipro",
     .marketname = "",
     .model = "Redmi K30 Pro Zoom Edition",
-    .build_fingerprint = "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys",
+    .build_fingerprint = "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys",
 
     .nfc = true,
 };
