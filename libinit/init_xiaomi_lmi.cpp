@@ -30,7 +30,7 @@ static const variant_info_t lmipro_info = {
     .device = "lmipro",
     .marketname = "",
     .model = "Redmi K30 Pro Zoom Edition",
-    .build_fingerprint = "Redmi/lmipro/lmipro:11/RKQ1.200826.002/V12.5.2.0.RJKMIXM:user/release-keys",
+    .build_fingerprint = "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.2.0.RJKMIXM:user/release-keys",
 
     .nfc = true,
 };
