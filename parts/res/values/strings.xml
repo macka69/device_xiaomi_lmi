@@ -17,6 +17,10 @@
 <resources>
     <!-- Ambient settings -->
     <string name="ambient_enable">Enable ambient display</string>
+    
+    <!--Display settings fragment -->
+    <string name="display_settings_title">Custom Display Settings</string>
+    <string name="display_settings_summary">HBM</string>
 
     <!-- Popup camera settings -->
     <string name="popup_title">Front camera settings</string>
@@ -47,8 +51,8 @@
     <string name="popup_camera_calibrate_failed">Couldn\'t calibrate</string>
     <string name="popup_camera_calibrate_success">Calibrated successfully. You can open the front camera now.</string>
 
-    <!-- Thermal profiles -->
-    <string name="thermal_title">Thermal profiles</string>
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Thermal Profiles</string>
     <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
     <string name="thermal_default">Default</string>
     <string name="thermal_benchmark">Benchmark</string>
@@ -102,4 +106,9 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- HBM settings -->
+    <string name="hbm_mode_title">High Brightness Mode</string>
+    <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value. Which helps in improving visibility in direct sunlight</string>
+    <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
 </resources>
