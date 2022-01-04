@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_lmi.mk
+    $(LOCAL_DIR)/bliss_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_lmi-userdebug \
-    arrow_lmi-eng
+    arrow_bliss-userdebug \
+    arrow_bliss-eng
