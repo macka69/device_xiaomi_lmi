@@ -14,9 +14,6 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 # Inherit some common Arrow stuff.
 $(call inherit-product, vendor/bliss/config/common.mk)
 
-# Boot animation resolution
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bliss_lmi
 PRODUCT_DEVICE := lmi
