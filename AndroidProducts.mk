@@ -8,5 +8,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bliss_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_bliss-userdebug \
-    arrow_bliss-eng
+    bliss_lmi-userdebug \
+    bliss_lmi-eng
