@@ -1,0 +1,15 @@
+dontaudit {
+  vendor_hal_neuralnetworks_default
+  vendor_qtidataservices_app
+  rild
+  hal_sensors_default
+  xiaomiparts_app
+} default_prop:file r_file_perms;
+
+dontaudit untrusted_app_all selinuxfs:file read;
+dontaudit untrusted_app proc:file { read };
+dontaudit untrusted_app qemu_sf_lcd_density_prop:file { read };
+dontaudit untrusted_app serialno_prop:file { read };
+dontaudit untrusted_app proc_tty_drivers:file { read };
+dontaudit mi_thermald self:capability { dac_override };
+dontaudit rild deviceid_prop:file { read };

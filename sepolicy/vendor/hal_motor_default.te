@@ -17,3 +17,6 @@ allow hal_motor_default {
   motor_device
   hall_device
 }:chr_file rw_file_perms;
+
+allow hal_motor_default property_socket:sock_file { write };
+allow hal_motor_default init:unix_stream_socket { connectto };
