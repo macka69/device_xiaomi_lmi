@@ -61,9 +61,9 @@ char const*const PERSISTENCE_FILE
         = "/sys/class/graphics/fb0/msm_fb_persist_mode";
 
 enum rgb_led {
-    LED_RED,
+    LED_RED = 0,
     LED_GREEN,
-    LED_BLUE = 0,
+    LED_BLUE,
 };
 
 char *led_names[] = {
@@ -197,7 +197,6 @@ set_speaker_light_locked(struct light_device_t* dev,
         struct light_state_t const* state)
 {
     int red, green, blue;
-    int brightness = rgb_to_brightness(state);
     int onMS, offMS;
     unsigned int colorRGB;
     int blink = 0;
@@ -233,14 +232,14 @@ set_speaker_light_locked(struct light_device_t* dev,
                 break;
         case LIGHT_FLASH_NONE:
         default:
-            rc = set_rgb_led_brightness(LED_RED, brightness);
-            rc |= set_rgb_led_brightness(LED_GREEN, brightness);
-            rc |= set_rgb_led_brightness(LED_BLUE, brightness);
+            rc = set_rgb_led_brightness(LED_RED, red);
+            rc |= set_rgb_led_brightness(LED_GREEN, green);
+            rc |= set_rgb_led_brightness(LED_BLUE, blue);
             break;
     }
 
-    ALOGV("set_speaker_light_locked mode=%d, brightness=%d, onMS=%d, offMS=%d, rc=%d\n",
-            state->flashMode, brightness, onMS, offMS, rc);
+    ALOGD("set_speaker_light_locked mode=%d, colorRGB=%08X, onMS=%d, offMS=%d, rc=%d\n",
+            state->flashMode, colorRGB, onMS, offMS, rc);
 
     return rc;
 }
