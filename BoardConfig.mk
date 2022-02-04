@@ -45,7 +45,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
-TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
+TARGET_KERNEL_CONFIG := vendor/lmi_user_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := kona
@@ -70,11 +70,6 @@ TARGET_USES_QTI_CAMERA_DEVICE := true
 # ConfigStore
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
-
-# Debug
-ifneq ($(ARROW_OFFICIAL), true)
-TARGET_FORCE_RO_DEBUGGABLE := true
-endif
 
 # Display
 TARGET_NO_RAW10_CUSTOM_FORMAT := true
