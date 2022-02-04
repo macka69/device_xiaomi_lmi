@@ -11,6 +11,7 @@ dontaudit untrusted_app proc:file { read };
 dontaudit untrusted_app qemu_sf_lcd_density_prop:file { read };
 dontaudit untrusted_app serialno_prop:file { read };
 dontaudit untrusted_app proc_tty_drivers:file { read };
+dontaudit untrusted_app dalvikcache_data_file:file { execmod };
 dontaudit mi_thermald self:capability { dac_override };
 dontaudit rild deviceid_prop:file { read };
 dontaudit hal_motor_default vendor_default_prop:property_service { set };
