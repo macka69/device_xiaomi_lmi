@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.google.android.gms">
+	<permission name="android.permission.WRITE_DEVICE_CONFIG"/>
+    </privapp-permissions>
+    
+    <privapp-permissions package="com.google.android.settings.intelligence.IntelligenceApplication">
+        <permission name="android.permission.READ_DEVICE_CONFIG"/>
+    </privapp-permissions>
+</permissions>
