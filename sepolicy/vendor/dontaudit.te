@@ -16,3 +16,4 @@ dontaudit mi_thermald self:capability { dac_override };
 dontaudit rild deviceid_prop:file { read };
 dontaudit hal_motor_default vendor_default_prop:property_service { set };
 dontaudit hal_fingerprint_default default_prop:file { read };
+dontaudit platform_app default_android_hwservice:hwservice_manager { find };
