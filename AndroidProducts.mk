@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_lmi.mk
+    $(LOCAL_DIR)/aosp_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_lmi-userdebug \
-    bliss_lmi-eng
+    aosp_lmi-userdebug \
+    aosp_lmi-eng

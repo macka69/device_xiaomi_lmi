@@ -12,16 +12,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
 # Inherit some common Arrow stuff.
-$(call inherit-product, vendor/bliss/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_lmi
+PRODUCT_NAME := aosp_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
-EXTRA_UDFPS_ANIMATIONS := true
+# Extra stuff
+WITH_GAPPS := true
+
+EXTRA_FOD_ANIMATIONS := true
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
