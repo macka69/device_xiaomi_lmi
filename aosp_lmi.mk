@@ -24,7 +24,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 # Extra stuff
 WITH_GAPPS := true
 
-EXTRA_FOD_ANIMATIONS := true
+# UDFPS Animations and Icons
+EXTRA_UDFPS_ICONS := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
