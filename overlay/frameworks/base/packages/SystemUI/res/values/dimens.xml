@@ -21,4 +21,7 @@
 
     <!-- UDFPS recognizing animation vertical position offset -->
     <dimen name="udfps_animation_offset">35dp</dimen>
+
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">30dp</dimen>
 </resources>
