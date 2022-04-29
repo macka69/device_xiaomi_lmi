@@ -8,6 +8,8 @@ hal_attribute_hwservice(hal_motor, hal_motor_hwservice)
 
 binder_call(hal_motor_client, hal_motor_server)
 
+binder_call(hal_motor_default, system_app)
+
 binder_call(hal_motor_default, xiaomiparts_app)
 
 r_dir_file(hal_motor_default, mnt_vendor_file)
