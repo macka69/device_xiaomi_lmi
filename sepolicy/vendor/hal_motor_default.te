@@ -8,8 +8,12 @@ hal_attribute_hwservice(hal_motor, hal_motor_hwservice)
 
 binder_call(hal_motor_client, hal_motor_server)
 
+hal_client_domain(cameraserver, hal_motor)
+hal_server_domain(hal_motor_default, hal_motor)
+
 binder_call(hal_motor_default, system_app)
 
+binder_call(xiaomiparts_app, hal_motor)
 binder_call(hal_motor_default, xiaomiparts_app)
 
 r_dir_file(hal_motor_default, mnt_vendor_file)
@@ -19,6 +23,16 @@ allow hal_motor_default {
   motor_device
   hall_device
 }:chr_file rw_file_perms;
+
+allow hal_motor_default {
+  mnt_vendor_file 
+  vendor_persist_sensors_file
+}:dir rw_dir_perms;
+
+allow hal_motor_default {
+  mnt_vendor_file
+  vendor_persist_sensors_file
+}:file rw_file_perms;
 
 allow hal_motor_default property_socket:sock_file { write };
 allow hal_motor_default init:unix_stream_socket { connectto };
