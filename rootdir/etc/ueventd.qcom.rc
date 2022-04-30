@@ -217,6 +217,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_vidc_dec_sec     0660   system     audio
 /dev/msm_vidc_enc         0660   system     audio
 /dev/msm_rotator          0660   system     system
+/dev/hw_random            0600   root       root
 /dev/sdsprpc-smd          0660   system     system
 
 #permissions for audio
@@ -307,6 +308,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/a98000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660 system drmrpc
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch          0440 system drmrpc
 /sys/devices/platform/soc/a84000.i2c/i2c-2/2-0020/input/input*  secure_touch_enable   0660 system drmrpc
+/sys/devices/platform/soc/a94000.i2c/i2c-3/3-00*                secure_touch         0440   system  drmrpc
+/sys/devices/platform/soc/a94000.i2c/i2c-3/3-00*                secure_touch_enable  0660   system  drmrpc
 
 # GNSS Device premissions
 /dev/gnss_sirf             0660   gps     gps
@@ -501,6 +504,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_en    0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_index 0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_type  0664    system  system
+
 
 # standard iio temp attributes
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_offset                  0664    system  system

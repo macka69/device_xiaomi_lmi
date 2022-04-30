@@ -210,6 +210,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.kona \
     libtinyxml \
+    libdisplayconfig.system.qti \
+    libqdMetaData.system \
     libvulkan \
     memtrack.kona \
     vendor.display.config@1.11.vendor \
