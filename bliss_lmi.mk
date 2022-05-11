@@ -17,6 +17,8 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 EXTRA_UDFPS_ANIMATIONS := true
 
+BLISS_BUILDTYPE=OFFICIAL
+
 PRODUCT_NAME := bliss_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
