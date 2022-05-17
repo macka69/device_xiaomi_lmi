@@ -9,6 +9,9 @@
 
 #include "vendor_init.h"
 
+#define DESCRIPTION "raven-user 12 SP2A.220505.002 8353555 release-keys"
+#define FINGERPRINT "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys"
+
 static const variant_info_t lmi_global_info = {
     .hwc_value = "",
     .sku_value = "std",
@@ -17,7 +20,8 @@ static const variant_info_t lmi_global_info = {
     .device = "lmi",
     .marketname = "",
     .model = "POCO F2 Pro",
-    .build_fingerprint = "POCO/lmi_global/lmi:12/RKQ1.211001.001/V13.0.1.0.SJKMIXM:user/release-keys",
+    .build_description = DESCRIPTION,
+    .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
@@ -30,7 +34,8 @@ static const variant_info_t lmipro_info = {
     .device = "lmipro",
     .marketname = "",
     .model = "Redmi K30 Pro Zoom Edition",
-    .build_fingerprint = "Redmi/lmipro/lmipro:12/RKQ1.211001.001/V13.0.1.0.SJKMIXM:user/release-keys",
+    .build_description = DESCRIPTION,
+    .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
@@ -43,7 +48,8 @@ static const variant_info_t lmi_info = {
     .device = "lmi",
     .marketname = "",
     .model = "Redmi K30 Pro",
-    .build_fingerprint = "Redmi/lmi/lmi:12/RKQ1.211001.001/V13.0.1.0.SJKMIXM:user/release-keys",
+    .build_description = DESCRIPTION,
+    .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
