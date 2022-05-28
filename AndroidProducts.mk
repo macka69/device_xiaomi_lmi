@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_lmi.mk
+    $(LOCAL_DIR)/p404_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_lmi-user \
-    bliss_lmi-userdebug \
-    bliss_lmi-eng
+    p404_lmi-user \
+    p404_lmi-userdebug \
+    p404_lmi-eng
