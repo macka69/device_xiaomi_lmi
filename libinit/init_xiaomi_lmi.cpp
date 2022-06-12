@@ -9,8 +9,8 @@
 
 #include "vendor_init.h"
 
-#define DESCRIPTION "raven-user 12 SP2A.220505.002 8353555 release-keys"
-#define FINGERPRINT "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys"
+#define DESCRIPTION "raven-user 12 SQ3A.220605.009.A1 8643238 release-keys"
+#define FINGERPRINT "google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys"
 
 static const variant_info_t lmi_global_info = {
     .hwc_value = "",
