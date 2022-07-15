@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_lmi.mk
+    $(LOCAL_DIR)/corvus_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_lmi-user \
-    bliss_lmi-userdebug \
-    bliss_lmi-eng
+    corvus_lmi-user \
+    corvus_lmi-userdebug \
+    corvus_lmi-eng
