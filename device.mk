@@ -157,10 +157,14 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 # Display
--include hardware/qcom-caf/sm8250/display/config/display-board.mk
--include hardware/qcom-caf/sm8250/display/config/display-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
+$(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-board.mk)
+$(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
+
+BOARD_DISPLAY_HAL := hardware/qcom-caf/sm8250/display
+TARGET_BOARD_PLATFORM := kona
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -280,7 +284,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-corvus
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
